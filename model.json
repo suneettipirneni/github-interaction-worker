@@ -1,24 +1,59 @@
 [
-    {
-        "name": "github",
-        "description": "Query an issue, pullrequest or commit-like from the provided repository",
-        "options": [
-            {
-                "name": "query",
-                "description": "Issue, PR number, commit-like expression or direct link to a GitHub Issue or PR",
-                "type": 3,
-                "required": true
-            },
-            {
-                "name": "repository",
-                "description": "Project repository (default: discord.js)",
-                "type": 3
-            },
-            {
-                "name": "owner",
-                "description": "Repository owner (default: discordjs)",
-                "type": 3
-            }
-        ]
-    }
+  {
+    "name": "github",
+    "description": "Query an issue, pullrequest or commit-like from the provided repository",
+    "options": [
+      {
+        "name": "query",
+        "description": "Issue, PR number, commit-like expression or direct link to a GitHub Issue or PR",
+        "type": 3,
+        "required": true
+      },
+      {
+        "name": "repository",
+        "description": "Project repository",
+        "type": 3,
+        "choices": [
+          {
+            "name": "club-site-2021",
+            "value": "club-site-2021"
+          },
+          {
+            "name": "hackathon-2021-frontend",
+            "value": "hackathon-2021-frontend"
+          },
+          {
+            "name": "hackathon-2021-backend",
+            "value": "hackathon-2021-backend"
+          },
+          {
+            "name": "hackathon-app-2021",
+            "value": "hackathon-app-2021"
+          },
+          {
+            "name": "Lancelot",
+            "value": "Lancelot"
+          },
+          {
+            "name": "scythe",
+            "value": "scythe"
+          },
+          {
+            "name": "api-node",
+            "value": "api-node"
+          },
+          {
+            "name": "admin-tool",
+            "value": "admin-tool"
+          }
+        ],
+        "required": true
+      },
+      {
+        "name": "owner",
+        "description": "Repository owner (default: KnightHacks)",
+        "type": 3
+      }
+    ]
+  }
 ]
